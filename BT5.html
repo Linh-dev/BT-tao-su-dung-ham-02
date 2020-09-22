@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT5</title>
+</head>
+<body>
+<script>
+    let number1 = parseInt(prompt());
+    let number2 = parseInt(prompt());
+    let number3 = parseInt(prompt());
+    function minNumber(a1,a2,a3){
+        if (a1 < a2){
+            if (a1<a3){
+                return a1;
+            }else {
+                return a3;
+            }
+        }else {
+            if (a2<a3){
+                return a2;
+            }else {
+                return a3;
+            }
+        }
+    }
+    let min = minNumber(number1,number2,number3);
+    alert(min+ " la so nho nhat");
+</script>
+</body>
+</html>
